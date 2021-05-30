@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: microservice_centralize-log-elk-demo
+
+server:
+  port: 9000
+
+logging:
+  file:
+    name: /Users/dev/IdeaProjects/microservice-centrallize-log-elk-demo/demo.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+    level:
+      root: DEBUG
+      org.springframework.web: DEBUG
