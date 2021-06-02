@@ -13,18 +13,16 @@ import java.util.Random;
 @RestController
 public class ElkLogApplication {
 
-	Logger logger= LoggerFactory.getLogger(ElkLogApplication.class);
+	private static final Logger logger= LoggerFactory.getLogger(ElkLogApplication.class);
 
     @GetMapping("/log")
     public String randomLog() {
 		int i = nextRandomInt(1, 10);
 		// 50% chance of error
-		if (i > 5)
-        {
+		if (i > 5) {
             logger.error("Random error.", new RuntimeException("Mock an exception, ignore please"));
         }
-		else
-        {
+		else {
             logger.info("Get random " + i);
         }
 
