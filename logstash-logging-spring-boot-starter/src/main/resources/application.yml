@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: logstash-spring-boot-starter
+
+server:
+  port: 9000
+
+logging.logstash:
+  enabled: true
+  url: 127.0.0.1:5000

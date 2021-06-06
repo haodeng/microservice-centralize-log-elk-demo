@@ -21,7 +21,3 @@ Start kibana
     # check up and running
     http://localhost:5601
 
-Download logstash and run
-https://www.elastic.co/downloads/logstash
-
-    bin/logstash -f /Users/dev/IdeaProjects/microservice-centrallize-log-elk-demo/logstash.conf
