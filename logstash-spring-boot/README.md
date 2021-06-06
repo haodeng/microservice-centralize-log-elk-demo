@@ -1,4 +1,4 @@
-# Manually run logstash
+# Use logstash file input
 
 Download logstash and run
 https://www.elastic.co/downloads/logstash
